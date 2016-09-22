@@ -53,14 +53,14 @@
 </head>
 
 <body>
-<p>Blue</p>
 
-<p id="demo"></p>
+
+<p id="demo">Blue</p>
 
     
 <!--This scripts reloads the window in order to repopulate up to date variables from server    -->
 <script>
-var myVar = setInterval(refreshPage, 100000);
+var myVar = setInterval(refreshPage, 1000);
 
 function refreshPage() {
     document.getElementById("demo").innerHTML = "Working!";
