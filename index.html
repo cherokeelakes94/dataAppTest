@@ -58,14 +58,14 @@
 <p id="demo"></p>
 
     
-<!--This scripts reloads the window in order to repopulate up to date variables from server    
+<!--This scripts reloads the window in order to repopulate up to date variables from server    -->
 <script>
-var myVar = setInterval(refreshPage, 1000);
+var myVar = setInterval(refreshPage, 100000);
 
 function refreshPage() {
-    window.location.reload();
+    document.getElementById("demo").innerHTML = "Working!";
 }
-</script>-->
+</script>
     
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
