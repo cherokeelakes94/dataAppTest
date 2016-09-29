@@ -47,7 +47,9 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    
+    <!-- CDN for Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>Hello World</title>
 </head>
@@ -88,7 +90,15 @@
 	</div>
 </nav>
 
-    
+<div class="jumbotron">
+    <div class="container">
+        <h1><center><center>No issues!</center></h1>
+            <h3><center>No current issues require your attention.</center></h3>
+            <p><center><span class="glyphicon glyphicon-ok" style="color:blue"></span></center></p>
+    </div>
+</div>
+
+
 <!--This scripts reloads the window in order to repopulate up to date variables from server    -->
 <!--<script>
 var myVar = setInterval(refreshPage, 1000);
