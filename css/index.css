@@ -14,12 +14,13 @@ body {
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
-    background-color: #333;
+    	background-color: grey;
+	padding-top: 70px;
 }
 
 body, * { font-family: 'Open Sans', sans-serif; }
 
-nav.navbar-merintur { background: rgba(255, 255, 255, 0.8); box-shadow: none; }
+nav.navbar-merintur { background: rgba(192,192,192, 1); box-shadow: none; }
 nav.navbar-merintur a { color: #333; }
 nav.navbar-merintur ul.navbar-nav a { color: #333; background: transparent; }
 nav.navbar-merintur ul.navbar-nav a:hover { box-shadow: inset 0 -1px 0 0 #000; }
@@ -31,3 +32,8 @@ nav.navbar-merintur button.navbar-toggle > span.icon-bar { background: #fff; bor
 nav.navbar-merintur ul.dropdown-menu { margin: 4px 0 0 0; border-radius: 0; border-width: 0; box-shadow: none; background: rgba(255, 255, 255, 0.8); }
 nav.navbar-merintur ul.dropdown-menu > li > a { color: #333; }
 nav.navbar-merintur ul.dropdown-menu > li > a:hover { background: rgba(0, 0, 0, 0.2); color: #fff; box-shadow: none; }
+
+   margin-top:10px;
+    background: #e0e0e0;
+}
+
