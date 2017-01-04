@@ -57,57 +57,110 @@
 <body>
 
 
-<nav class="navbar navbar-merintur navbar-fixed-top">
-    <div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Whitewater Technology</a>
-		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="index.html">Dashboard <span class="sr-only">(current)</span></a></li>
-				<li><a href="data.html">Data</a></li>
-                <li><a href="status.html">Status</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Settings <span class="caret"></span></a>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
+<div class="row">
+    <!-- uncomment code for absolute positioning tweek see top comment in css -->
+    <!-- <div class="absolute-wrapper"> </div> -->
+    <!-- Menu -->
+    <div class="side-menu">    
+		<nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<div class="brand-wrapper">
+					<!-- Hamburger -->
+					<button type="button" class="navbar-toggle">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 
-<div class="jumbotron">
-    <div class="container">
-        <h1><center><center>No issues!</center></h1>
-            <h3><center>No current issues require your attention.</center></h3>
-            <p><center><span class="glyphicon glyphicon-ok" style="color:blue"></span></center></p>
+					<!-- Brand -->
+					<div class="brand-name-wrapper">
+						<a class="navbar-brand" href="#">
+							Brand
+						</a>
+					</div>
+
+					<!-- Search -->
+					<a data-toggle="collapse" href="#search" class="btn btn-default" id="search-trigger">
+						<span class="glyphicon glyphicon-search"></span>
+					</a>
+
+					<!-- Search body -->
+					<div id="search" class="panel-collapse collapse">
+						<div class="panel-body">
+							<form class="navbar-form" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
+								</div>
+								<button type="submit" class="btn btn-default "><span class="glyphicon glyphicon-ok"></span></button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Main Menu -->
+			<div class="side-menu-container">
+				<ul class="nav navbar-nav">
+
+					<li><a href="#"><span class="glyphicon glyphicon-send"></span> Link</a></li>
+					<li class="active"><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
+
+					<!-- Dropdown-->
+					<li class="panel panel-default" id="dropdown">
+						<a data-toggle="collapse" href="#dropdown-lvl1">
+							<span class="glyphicon glyphicon-user"></span> Sub Level <span class="caret"></span>
+						</a>
+
+						<!-- Dropdown level 1 -->
+						<div id="dropdown-lvl1" class="panel-collapse collapse">
+							<div class="panel-body">
+								<ul class="nav navbar-nav">
+									<li><a href="#">Link</a></li>
+									<li><a href="#">Link</a></li>
+									<li><a href="#">Link</a></li>
+
+									<!-- Dropdown level 2 -->
+									<li class="panel panel-default" id="dropdown">
+										<a data-toggle="collapse" href="#dropdown-lvl2">
+											<span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
+										</a>
+										<div id="dropdown-lvl2" class="panel-collapse collapse">
+											<div class="panel-body">
+												<ul class="nav navbar-nav">
+													<li><a href="#">Link</a></li>
+													<li><a href="#">Link</a></li>
+													<li><a href="#">Link</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
+
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</nav>    
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="side-body">
+
+        </div>
     </div>
 </div>
-
-
-<!--This scripts reloads the window in order to repopulate up to date variables from server    -->
-<!--<script>
-var myVar = setInterval(refreshPage, 1000);
-
-function refreshPage() {
-    document.getElementById("demo").innerHTML = "Working!";
-}
-</script>-->
-    
+	
+	<!-- Side-Menu Script-->
+	<script type="text/javascript" src="js/side-menu.js"></script>
+  
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
