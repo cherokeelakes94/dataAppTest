@@ -1,6 +1,6 @@
 function createUser(){
 
-var email = "cherokeedlakes@gmail.com";
+var email = "cherokeelakes94@gmail.com";
 
 var password = "password";
 

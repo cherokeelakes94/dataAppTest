@@ -1,6 +1,6 @@
 function signUserOut(){
 	firebase.auth().signOut().then(function() {
-	  // Sign-out successful.
+	  document.getElementById("login-div").style.display = 'block';
 	}, function(error) {
 	  // An error happened.
 	});
