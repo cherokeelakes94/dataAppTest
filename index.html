@@ -50,8 +50,12 @@
     
     <!-- CDN for Firebase -->
     <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+	
+	<!-- CSS STYLE INCLUDES -->
     <link rel="stylesheet" type="text/css" href="css/index.css" />
 	<link rel="stylesheet" type="text/css" href="css/enable-disable-styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/card-post.css" />
+	
     <title>Hello World</title>
 </head>
 
@@ -106,23 +110,7 @@
 			<div class="side-menu-container">
 				<ul class="nav navbar-nav">
 
-					<!-- Dropdown-->
-					<li class="panel panel-default" id="dropdown">
-						<a data-toggle="collapse" href="#dropdown-lvl1">
-							<span class="glyphicon glyphicon-flag"></span> Character <span class="caret"></span>
-						</a>
-
-						<!-- Dropdown level 1 -->
-						<div id="dropdown-lvl1" class="panel-collapse collapse">
-							<div class="panel-body">
-								<ul class="nav navbar-nav">
-									<li><a id="link-status" href="#">Status</a></li>
-									<li><a id="link-attributes" href="#">Attributes</a></li>
-									<li><a id="link-skills" href="#">Skills</a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
+					<li><a id="link-my-rewards" href="#"><span class="glyphicon glyphicon-book"></span> My Rewards</a></li>
 					
 					<!-- Dropdown-->
 					<li class="panel panel-default" id="dropdown">
@@ -177,89 +165,59 @@
 						</div>
 					</li>					
 
-					<li><a id="link-journal" href="#"><span class="glyphicon glyphicon-book"></span> Journal</a></li>
+					<li><a id="link-my-profile" href="#"><span class="glyphicon glyphicon-book"></span> My Profile</a></li>
 
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>    
     </div>
 
-    <!-- Main Content -->
+    <!-- MAIN CONTENT -->
     <div class="container-fluid">
         <div class="side-body">
-				<div class="row disabled" id="div-status">		
-				   <div class="col-md-7 ">
-						<div class="panel panel-default">
-					  <div class="panel-heading"><h4 >User Profile</h4></div>
-					   <div class="panel-body">
-						   
-						<div class="box box-info">							
-								<div class="box-body">
-										 <div class="col-sm-6">
-											 <div  align="center"> <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class="img-circle img-responsive"> 
-										
-												<input id="profile-image-upload" class="hidden" type="file">
-												<div style="color:#999;" >Click here to change avatar</div>				   
-									  
-											</div>
-								  
-										<br>
-						
-										
-										</div>
-								<div class="col-sm-6">
-								<h4 style="color:#00b1b1;">Username </h4></span>
-								  <span><p>Aspirant</p></span>            
-								</div>
-								<div class="clearfix"></div>
-								<hr style="margin:5px 0 5px 0;">
-						
-								  
-					<div class="col-sm-5 col-xs-6 tital " >Name:</div><div class="col-sm-7 col-xs-6 ">Ronald</div>
-						 <div class="clearfix"></div>
-					<div class="bot-border"></div>
-
-					<div class="col-sm-5 col-xs-6 tital " >Level:</div><div class="col-sm-7"> 47</div>
-					  <div class="clearfix"></div>
-					<div class="bot-border"></div>
-
-					<div class="col-sm-5 col-xs-6 tital " >Class:</div><div class="col-sm-7"> IT Technician</div>
-					  <div class="clearfix"></div>
-					<div class="bot-border"></div>
-
-					<div class="col-sm-5 col-xs-6 tital " >Guild:</div><div class="col-sm-7">USA</div>
-
-					  <div class="clearfix"></div>
-					<div class="bot-border"></div>
-
-					<div class="col-sm-5 col-xs-6 tital " >Rank:</div><div class="col-sm-7">Grand Master</div>
-
-					  <div class="clearfix"></div>
-					<div class="bot-border"></div>
-
-
-								
-							  </div>
-							  
-
-							</div>
-						   
-								
-						</div> 
-						</div>
-					</div>  
+				<div class="row disabled" id="div-my-rewards">		
+				  <!-- Post-->
+				  <div class="post-module"> 
+					<!-- Thumbnail-->
+					<div class="thumbnail">
+					  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt=""> </div>
+					<!-- Post Content-->
+					<div class="post-content">
+					  <div class="category">Food</div>
+					  <h1 class="title">Burger Shack</h1>
+					  <h2 class="sub_title">$5 off any value meal.</h2>
+					  <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+					  <div class="post-meta"><span>Offer Good From 5/12/17 - 6/12/17</span></div>
+					</div>
+				  </div>
+				  <div class="post-module"> 
+					<!-- Thumbnail-->
+					<div class="thumbnail">
+					  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt=""> </div>
+					<!-- Post Content-->
+					<div class="post-content">
+					  <div class="category">Electronics</div>
+					  <h1 class="title">PC-O-Matic</h1>
+					  <h2 class="sub_title">$29.99 PC Tune-Up.</h2>
+					  <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+					  <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>
+					</div>
+				  </div>				  
 				</div>
 				
 				<div class="panel panel-default disabled" id="div-attributes">
-					<div class="panel-body">Attributes</div>
+					<div class="panel-body">
+					
+					</div>
 				</div>
 				
 				<div class="panel panel-default disabled" id="div-skills">
 					<div class="panel-body">
-						<button type="button" class="btn btn-primary" onclick="addSkill()">Add Skill</button>	
+
 					</div>
 				</div>		
 
+				<!-- LOGIN DIV -->
 				<div id="login-div">
 					<section id="login">
 											
@@ -289,22 +247,48 @@
 					</section>
 				</div>
 				
-				<div class="panel panel-default disabled" id="div-journal">
-					<div class="panel-body">
-						<button type="button" class="btn btn-primary" onclick="signUserOut()">Sign Out</button>	
+				<div class="panel panel-default disabled" id="div-my-profile">
+					<div>
+						<div>
+							<div>
+								<div>
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+									<h4">More About Joe</h4>
+									</div>
+								<div>
+									<center>
+									<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+									<h3 class="media-heading">Joe Sixpack <small>USA</small></h3>
+									<span><strong>Skills: </strong></span>
+										<span class="label label-warning">HTML5/CSS</span>
+										<span class="label label-info">Adobe CS 5.5</span>
+										<span class="label label-info">Microsoft Office</span>
+										<span class="label label-success">Windows XP, Vista, 7</span>
+									</center>
+									<hr>
+									<center>
+									<p class="text-left"><strong>Bio: </strong><br>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+									<br>
+									</center>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>					
         </div>
     </div>
 </div>
 	
-	<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+	<!-- FIREBASE SCRIPT -->
 	<script>
 	  // Initialize Firebase
 	  var config = {
 		apiKey: "AIzaSyDV0myVWfqDQac3AJzP9ridBSXavRP3lyg",
 		authDomain: "scorching-inferno-3715.firebaseapp.com",
 		databaseURL: "https://scorching-inferno-3715.firebaseio.com",
+		projectId: "scorching-inferno-3715",
 		storageBucket: "scorching-inferno-3715.appspot.com",
 		messagingSenderId: "529780673682"
 	  };
@@ -319,7 +303,7 @@
 	<script type="text/javascript" src="js/menu-controller.js"></script>
 	<script type="text/javascript" src="js/sign-out.js"></script>
 	
-    <script type="text/javascript" src="cordova.js"></script>
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
