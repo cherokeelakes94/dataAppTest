@@ -3,10 +3,10 @@ window.onload = function() {
 
   //Get a reference to the link on the page
   // with an id of "mylink"
-  var a = document.getElementById("link-status");
+  var a = document.getElementById("link-my-rewards");
   var b = document.getElementById("link-attributes");
   var c = document.getElementById("link-skills");
-  var d = document.getElementById("link-journal");
+  var d = document.getElementById("link-my-profile");
   
   
   
@@ -18,18 +18,18 @@ window.onload = function() {
 	
 	if (user) { 
 		//Enable
-		document.getElementById("div-status").classList.remove('disabled'); 
+		document.getElementById("div-my-rewards").classList.remove('disabled'); 
 		
 		//Disable
 		document.getElementById("div-attributes").classList.add("disabled");
 		document.getElementById("div-skills").classList.add("disabled");
-		document.getElementById("div-journal").classList.add('disabled'); 
+		document.getElementById("div-my-profile").classList.add('disabled'); 
 	
 		return false;
  	}
   }
   
-   b.onclick = function() {
+/*    b.onclick = function() {
 	
 	var user = firebase.auth().currentUser;
 	
@@ -38,9 +38,9 @@ window.onload = function() {
 		document.getElementById("div-attributes").classList.remove('disabled'); 
 			
 		//Disable
-		document.getElementById("div-status").classList.add("disabled");
+		document.getElementById("div-my-rewards").classList.add("disabled");
 		document.getElementById("div-skills").classList.add("disabled");
-		document.getElementById("div-journal").classList.add('disabled'); 
+		document.getElementById("div-my-profile").classList.add('disabled'); 
 		
 		return false;
 	}
@@ -55,13 +55,13 @@ window.onload = function() {
 		document.getElementById("div-skills").classList.remove('disabled'); 
 			
 		//Disable
-		document.getElementById("div-status").classList.add("disabled");
+		document.getElementById("div-my-rewards").classList.add("disabled");
 		document.getElementById("div-attributes").classList.add("disabled");
-		document.getElementById("div-journal").classList.add('disabled'); 
+		document.getElementById("div-my-profile").classList.add('disabled'); 
 		
 		return false;
 	}
-  }
+  } */
 
   d.onclick = function() {
 	
@@ -69,10 +69,10 @@ window.onload = function() {
 	
 	if (user) { 
 		//Enable
-		document.getElementById("div-journal").classList.remove('disabled'); 
+		document.getElementById("div-my-profile").classList.remove('disabled'); 
 			
 		//Disable
-		document.getElementById("div-status").classList.add("disabled");
+		document.getElementById("div-my-rewards").classList.add("disabled");
 		document.getElementById("div-attributes").classList.add("disabled");
 		document.getElementById("div-skills").classList.add("disabled");
 		
