@@ -77,12 +77,23 @@
   position: absolute;
   top: -34px;
   left: 0;
-  background: #f2b202;
   padding: 10px 15px;
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 600;
+  text-align: center;
   text-transform: uppercase;
+  width: 150px;
+}
+
+.category-food
+{
+	background: #0281F2;
+}
+
+.category-electronics
+{
+	background: #f2b202;
 }
 .post-module .post-content .title {
   margin: 0;
