@@ -1,8 +1,8 @@
 function createUser(){
 
-var email = "cherokeelakes94@gmail.com";
+var email = document.getElementById("login-email").value;
 
-var password = "password";
+var password = document.getElementById("login-password").value
 
 firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
